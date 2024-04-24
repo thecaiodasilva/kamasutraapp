@@ -1,30 +1,34 @@
-*{
-    padding: 0;
+* {
     margin: 0;
+    padding: 0;
     box-sizing: border-box;
-    
-    
 }
 
-body{
-    background-color: aliceblue;
+body {
+    font-family: "Arial", sans-serif;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
-
 .wrapper {
-    max-width: 400px;
-    position: absolute;
-    
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
 }
 
 .container {
-    width: 100%;
-    background-color: #ff0f0f;
-    padding: 10px 10px;
-    box-shadow: 0 20px 65px rgba(11, 12, 87, 0.5);
-    position: relative;
+    background-color: #fff;
+    padding: 30px;
     border-radius: 8px;
-    text-align: center;
-    color: #f0f0f0;
+    /*box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); */
+    display: center;
+    align-items: center;
+    justify-content: center;
+    
 }
 
 .container img {
@@ -34,32 +38,91 @@ body{
     margin-bottom: 20px;
 }
 
-p { 
-    color: #fdd8d8;
-    line-height: 2;
-    font-size: 2em;
-}
-
-h3 {
-    color: #fff;
-    margin: 20px 0 60px 0;
-    font-size: 1em;
-    font-weight: 600;
-    text-transform: capitalize;
-}
-
-.container button {
-    background-color: #fff;
+button {
+    height: 60px;
+    display: flex;
+    background-color: #c1111f;
+    justify-content: center;
+    align-items: center;
+    color: #fdf0d5;
     border: none;
-    padding: 15px 45px;
+    margin: auto;
+    padding: 15px 30px;
     border-radius: 5px;
     font-size: 18px;
-    font-weight: 600;
-    color: #ff0f0f;
     cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-.container button:hover {
-    background-color: #f0f0f0;
-    color: #ff0f0f;
+.container p{
+    font-weight: 900;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 15px;
+    color: #003049;
+}
+
+button:hover {
+    background-color: #790007;
+}
+
+footer {
+    padding: 3px;
+
+    color: #fff;
+    text-align: center;
+}
+
+
+.social-links {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Estilos para a área de código PIX */
+.pix-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.payment p {
+    color: #001f40;
+}
+
+#pixCode {
+    width: 60%;
+    padding: 3px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none; /* Impede redimensionamento da área de texto */
+    font-family: monospace; /* Fonte monoespaçada para melhorar legibilidade do código */
+}
+
+#copyButton {
+    background-color: #203ea3;
+    width: 30%;
+    height: 40px;
+    color: #fff;
+    border: none;
+    padding: 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#copyButton:hover {
+    background-color: #001f40;
 }
