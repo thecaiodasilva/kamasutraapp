@@ -9,35 +9,30 @@
 </head>
 <body>
     <div class="wrapper">
-        <div class="container">
-            <img id="image" src="/src/img/480.png" alt="">
-            <p id="posicao"></p>
-            <button id="btn">NOVA POSIÇÃO</button>
+        <div class="container" id="container">
+            <div class="search-container hidden"> <!-- Aqui -->
+                <input type="text" class="search-input" placeholder="Buscar...">
+                <button class="search-button">
+                    <img src="caminho-para-o-icone-lupa.png" alt="Buscar" class="search-icon">
+                    Buscar
+                </button>
+            </div>
+            <div id="homeContent">
+                
+                <p>Este é um site para explorar diferentes posições do Kamasutra de forma aleatória.</p>
+                <p>Clique no botão abaixo para começar a explorar:</p>
+                <button id="startButton">Explorar Posições</button>
+            </div>
+            <div id="imageContent" style="display:none;">
+                <img id="image" src="" alt="">
+                <p id="posicao"></p>
+                <button id="btn">NOVA POSIÇÃO</button>
+            </div>
         </div>
     </div>
 
-    <footer>
-        <div class="credits">
-           <!-- <p>Imagens fornecidas por: <a href="https://sexpositions.club/pt/posicoes">sexpositions</a></p> -->
-        </div>
-        <div class="social-links">
-            <a href="https://github.com/thecaiodasilva/" target="_blank"><img src="/src/img/github.png" alt="Github"></a>
-            <a href="https://www.instagram.com/caiodasilva1" target="_blank"><img src="/src/img/isntagram.png" alt="Instagram"></a>
-            
-        </div>
-        <!--
-        <div class="payment">
-            <p>Se você gostou, faça uma contribuição pelo PIX:</p>
-            <div class="pix-container">
-                <textarea id="pixCode" readonly>7330043b-e2e0-498e-908d-d58d64fcd394</textarea>
-                <button id="copyButton">Copiar</button>
-            </div>
-        </div>
-
+    <script src="/src/posicoes.js" ></script>
+    <script src="/src/script.js" type="module"></script>
     
-    </footer>
--->
-    <script src="/src/script.js"></script>
-    <script src="/src/pix.js"></script>
 </body>
 </html>
