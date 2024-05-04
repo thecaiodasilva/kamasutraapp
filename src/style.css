@@ -11,6 +11,46 @@ body {
     flex-direction: column;
     min-height: 100vh;
 }
+/* Estilos para a barra de pesquisa */
+.search-container {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* Estilos para o campo de entrada */
+.search-input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 300px;
+}
+
+/* Estilos para o botão de busca */
+.search-button {
+    background-color: #007bff; /* Cor de fundo */
+    color: white; /* Cor do texto */
+    border: none; /* Remove a borda */
+    border-radius: 5px; /* Adiciona borda arredondada */
+    padding: 10px 20px; /* Espaçamento interno */
+    margin-left: 5px; /* Espaçamento à esquerda */
+    cursor: pointer; /* Altera o cursor ao passar sobre o botão */
+}
+
+/* Estilos para o ícone de lupa */
+.search-icon {
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+/* Classe para ocultar elementos */
+.hidden {
+    display: none;
+}
+
+
 .wrapper {
     flex: 1;
     display: flex;
